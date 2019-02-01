@@ -1,0 +1,140 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/background_sunset" >
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".HelpActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1.0"
+        android:orientation="horizontal" >
+        
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:drawableTop="@drawable/time_setting"
+            android:gravity="center"
+            android:drawablePadding="5dp"
+            android:text="@string/time_setting_rules"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:padding="5dp"
+            android:layout_marginRight="5dp"
+            android:onClick="timeSetting"
+            android:clickable="true"
+            android:background="@drawable/background_clickable_row"/>
+        
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:drawableTop="@drawable/white_list"
+            android:gravity="center"
+            android:drawablePadding="5dp"
+            android:text="@string/white_list_setup"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:onClick="whiteList"
+            android:clickable="true"
+            android:background="@drawable/background_clickable_row"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1.0"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+        
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:drawableTop="@drawable/emergency"
+            android:gravity="center"
+            android:drawablePadding="5dp"
+            android:text="@string/emergency_incoming_calls"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:padding="5dp"
+            android:layout_marginRight="5dp"
+            android:onClick="emergency"
+            android:clickable="true"
+            android:background="@drawable/background_clickable_row"/>
+        
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:drawableTop="@drawable/text_reject"
+            android:gravity="center"
+            android:drawablePadding="5dp"
+            android:text="@string/sms_on_auto_call_reject"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:onClick="textReject"
+            android:clickable="true"
+            android:background="@drawable/background_clickable_row"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1.0"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+        
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:drawableTop="@drawable/through_call"
+            android:gravity="center"
+            android:drawablePadding="5dp"
+            android:text="@string/through_call_profile"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:padding="5dp"
+            android:layout_marginRight="5dp"
+            android:onClick="throughCall"
+            android:clickable="true"
+            android:background="@drawable/background_clickable_row"/>
+        
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:drawableTop="@drawable/colour_bars"
+            android:gravity="center"
+            android:drawablePadding="5dp"
+            android:text="@string/colour_bars"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:paddingTop="30dp"
+            android:layout_marginLeft="5dp"
+            android:onClick="colorBars"
+            android:clickable="true"
+            android:background="@drawable/background_clickable_row"/>
+        
+    </LinearLayout>
+    
+</LinearLayout>
+</ScrollView>

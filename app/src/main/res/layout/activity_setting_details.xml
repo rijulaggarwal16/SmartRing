@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_sunset"
+    tools:context=".SettingDetailsActivity" >
+
+    <LinearLayout
+        android:id="@+id/mainAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/black"
+        android:orientation="horizontal"
+        android:weightSum="1.0" >
+        
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:background="@drawable/background_black"
+            android:clickable="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white"
+            android:padding="5dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+        
+        <TextView
+            android:id="@+id/save"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="@string/save"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white"
+            android:background="@drawable/background_black"
+            android:clickable="true"
+            android:padding="5dp"
+            android:textStyle="bold" />
+
+        
+    </LinearLayout>
+
+    <TextView
+                    android:id="@+id/addNewSlot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_grey"
+                    android:drawableLeft="@drawable/ic_action_new"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/add_more_time_slots"
+                    android:clickable="true"
+                    android:layout_above="@id/mainAction"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/addNewSlot" >
+
+        <LinearLayout
+            android:id="@+id/schedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0" >
+            
+            <TextView 
+                android:id="@+id/dayName"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/monday"
+                android:layout_weight="0.6"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/same_as"
+                android:layout_gravity="center"
+                android:layout_weight="0.02"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+            
+            <Spinner
+            android:id="@+id/sameas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.38"
+            android:entries="@array/days_of_week"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+            
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:background="#E22A54" />
+
+                
+        </LinearLayout>
+    </ScrollView>
+    
+    <TextView
+                android:id="@+id/info"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_above="@id/addNewSlot"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="50dp"
+                android:text="@string/setting_info" />
+
+</RelativeLayout>

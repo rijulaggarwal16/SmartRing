@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Smart Ring</string>
+    <string name="action_settings">Settings</string>
+    <string name="settings_for_profile">Settings for profile</string>
+    <string name="title_activity_setting_details">SettingDetailsActivity</string>
+
+    <string-array name="ring_choices_array">
+        <item>Normal</item>
+        <item>Vibrate</item>
+        <item>Silent</item>
+        <item>No Call silent</item>
+    </string-array>
+    <string-array name="no_call_ring_choices">
+        <item>Normal</item>
+        <item>Vibrate</item>
+        <item>Silent</item>
+    </string-array>
+    <string-array name="days_of_week">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+
+    <string name="title_activity_white_list">WhiteListActivity</string>
+    <string name="monday">Monday</string>
+    <string name="current_profile">"Current profile - "</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="add_more_time_slots">Add more time slots</string>
+    <string name="same_as">Same As:</string>
+    <string name="setting_info">+ Add more time slots by clicking below.\n 1 day = 12:00 AM to 11:59 PM</string>
+    <string name="add_contact_to_white_list">Add contact to White List</string>
+    <string name="white_list_info">+ Populate your White List by clicking below. These numbers will be able to reach you when you are in \&apos;No Call Silent\&apos; mode</string>
+    <string name="no_call_silent_settings">No Call Silent Settings</string>
+    <string name="white_list">White List</string>
+    <string name="white_list_desc">Allow specific callers to reach</string>
+    <string name="emergency_calls">Emergency Calls</string>
+    <string name="emergency_desc">Allow 3rd attempt in 15 mins</string>
+    <string name="text_rejection">Text Rejection</string>
+    <string name="text_desc">Send a text message when auto reject</string>
+    <string name="discard_row">Discard row</string>
+    <string name="start">Start</string>
+    <string name="end">End</string>
+    <string name="name">Name</string>
+    <string name="number">Number</string>
+    <string name="call_through">Call Through</string>
+    <string name="call_through_desc">Ring style when call through \&apos;No Call Silent\&apos;</string>
+    <string name="title_activity_help">HelpActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_help_articles">Help</string>
+    <string name="about">About</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="about_info">Developed by \n AVR Technologies \n &#169; 2014 &#8211; 2015 \n\n Credits: Rijul Aggarwal  \n Contact: rijulaggarwal@yahoo.com</string>
+    <string name="time_setting_rules">Time Setting Rules</string>
+    <string name="white_list_setup">White List Setup</string>
+    <string name="emergency_incoming_calls">Emergency Incoming Calls</string>
+    <string name="sms_on_auto_call_reject">SMS On Auto Call Reject</string>
+    <string name="through_call_profile">Through Call Profile</string>
+    <string name="colour_bars">Colour bars</string>
+    <string name="off">OFF</string>
+    <string name="on">ON</string>
+    <string name="title_activity_skip">SkipActivity</string>
+
+</resources>

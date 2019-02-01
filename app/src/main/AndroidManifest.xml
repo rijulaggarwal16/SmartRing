@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="play.rijul.smartring"
+    android:versionCode="3"
+    android:versionName="1.2" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.PROCESS_INCOMING_CALLS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="play.rijul.smartring.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="play.rijul.smartring.SettingDetailsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <receiver android:name="play.rijul.smartring.ProfileReceiver" >
+        </receiver>
+
+        <activity
+            android:name="play.rijul.smartring.Preferences"
+            android:label="@string/action_settings" >
+        </activity>
+        <activity
+            android:name="play.rijul.smartring.WhiteListActivity"
+            android:label="@string/white_list"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <receiver android:name="play.rijul.smartring.IncomingCallReceiver" >
+            <intent-filter android:priority="999" >
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="play.rijul.smartring.HelpActivity"
+            android:label="@string/title_activity_help_articles" >
+        </activity>
+        <activity
+            android:name="play.rijul.smartring.HelpArticlesActivity"
+            android:label="@string/title_activity_help_articles" >
+        </activity>
+        <activity
+            android:name="play.rijul.smartring.AboutActivity"
+            android:label="@string/about" >
+        </activity>
+        <service 
+            android:name="play.rijul.smartring.MyService" >
+        </service>
+    </application>
+
+</manifest>

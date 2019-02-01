@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_sunset"
+    tools:context=".WhiteListActivity" >
+
+    <LinearLayout
+        android:id="@+id/mainListAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/black"
+        android:orientation="horizontal"
+        android:weightSum="1.0" >
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/background_black"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="cancelList"
+            android:padding="5dp"
+            android:text="@string/cancel"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/white" />
+
+        <TextView
+            android:id="@+id/save"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/background_black"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="saveList"
+            android:padding="5dp"
+            android:text="@string/save"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/addNewContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/mainListAction"
+        android:background="@drawable/button_grey"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ic_action_new"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:onClick="getNewContact"
+        android:padding="10dp"
+        android:text="@string/add_contact_to_white_list"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/addNewContact"
+        android:padding="5dp" >
+
+        <LinearLayout
+            android:id="@+id/contactList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/addNewContact"
+        android:gravity="center"
+        android:padding="50dp"
+        android:text="@string/white_list_info"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
